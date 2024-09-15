@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Details - PKStore</title>
+    <link rel="stylesheet" href="./pkstore.css" />
+    <!-- Roboto font cdn link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="../store.img/pk.png" alt="" id="pklogo" />
+          <img src="../store.img/setting1.png" alt="" id="settinglogo" />
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./productdetails.html">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="./account.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="./cart.html">
+          <img
+            src="../PKStore_Img/images/cart.png"
+            alt=""
+            width="30px"
+            height="30px"
+          />
+        </a>
+        <img
+          src="../PKStore_Img/images/menu.png"
+          alt=""
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+      <!-- --------------single product details-------------------- -->
+      <div class="small-container single-product">
+        <div class="row">
+          <div class="col-2">
+            <img
+              src="../PKStore_Img/images/gallery-1.jpg"
+              alt=""
+              width="100%"
+              height="100%"
+              id="ProductImg"
+            />
+            <div class="small-img-row">
+              <div class="small-img-col">
+                <img
+                  src="../PKStore_Img/images/gallery-1.jpg"
+                  alt=""
+                  width="100%"
+                  class="small-img"
+                />
+                <img
+                  src="../PKStore_Img/images/gallery-2.jpg"
+                  alt=""
+                  width="100%"
+                  class="small-img"
+                />
+                <img
+                  src="../PKStore_Img/images/gallery-3.jpg"
+                  alt=""
+                  width="100%"
+                  class="small-img"
+                />
+                <img
+                  src="../PKStore_Img/images/gallery-4.jpg"
+                  alt=""
+                  width="100%"
+                  class="small-img"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <p>Home / T-shirt</p>
+            <h1>PK Printed T-shirt by HRX</h1>
+            <h4>$50.00</h4>
+            <select>
+              <option>Select Size</option>
+              <option>XXL</option>
+              <option>XL</option>
+              <option>Large</option>
+              <option>Medium</option>
+              <option>Small</option>
+            </select>
+            <input type="number" value="1" />
+            <a href="./cart.html" class="btn cart-btn">Add To Cart</a>
+            <h3>Product Details <i class="fa fa-indent"></i></h3>
+            <p>
+              Give your summer wardrobe a style upgrade with the HRX Men's
+              Active T-shirt. Team it with a pair of shorts for your morning
+              workout or a denims for an evening out with the guys.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------title---------------- -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Products</h2>
+        <p id="viewmore">View more &#8594;</p>
+      </div>
+    </div>
+    <!-- ----------products---------- -->
+    <div class="small-container products">
+      <div class="row">
+        <div class="col-4">
+          <img src="../PKStore_Img/images/product-5.jpg" alt="" />
+          <h4>PK Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-regular fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="../PKStore_Img/images/product-6.jpg" alt="" />
+          <h4>PK Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-regular fa-star-half-stroke"></i>
+            <i class="fa fa-regular fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="../PKStore_Img/images/product-7.jpg" alt="" />
+          <h4>PK Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-regular fa-star-half-stroke"></i>
+            <i class="fa fa-regular fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+        <div class="col-4">
+          <img src="../PKStore_Img/images/product-8.jpg" alt="" />
+          <h4>PK Printed T-shirt</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-regular fa-star"></i>
+          </div>
+          <p>$50.00</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------- footer ---------------- -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h2>Download Our App</h2>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app">
+              <a href="www.playstore.com"
+                ><img src="../PKStore_Img/images/play-store.png" alt=""
+              /></a>
+              <img src="../PKStore_Img/images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="../store.img/pk.png" alt="" id="pklogo" />
+            <img src="../store.img/setting1.png" alt="" id="settinglogo" />
+            <p>
+              Our Purpose Is To Sustainably Make the Pleasure and Benifits of
+              sports Accessible to the Many.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h2>Useful Links</h2>
+            <a href="">
+              <ul>
+                <li>Coupons</li>
+                <li>Blog Post</li>
+                <li>Return Policy</li>
+                <li>Join Affiliate</li>
+              </ul>
+            </a>
+          </div>
+          <div class="footer-col-4">
+            <h2>Follow us</h2>
+            <a href="">
+              <ul>
+                <li>Facebook</li>
+                <div class="underline" id="line"></div>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+              </ul>
+            </a>
+          </div>
+        </div>
+        <hr />
+
+        <p class="copyright">Copyright 2024 - Just Tutorial</p>
+      </div>
+    </div>
+    <script src="./pkstore.js"></script>
+    <script src="productdetails.js"></script>
+  </body>
+</html>
